@@ -1,0 +1,52 @@
+<%
+=begin%>
+ <header>
+<!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+    <li><a href="#!">My Profile</a></li>
+    <li><a href="#!">My Courses</a></li>
+    <li class="divider"></li>
+    <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
+    </ul>
+
+    <ul id="dropdown2" class="dropdown-content">
+    <li><a href="#!">My Profile</a></li>
+    <li><a href="#!">My Courses</a></li>
+    <li class="divider"></li>
+    <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
+</ul>
+
+
+   <nav class="brown lighten-4 z-depth-2">
+   <div class="container">
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo">Shan Siddiqui</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons"></i></a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="#">Courses</a></li>
+            <% if(!user_signed_in?)%>
+              <li><%= link_to "Sign_Up", new_user_registration_path %></li>
+              <li><%= link_to "Login", new_user_session_path %></li>
+              <%else%>
+     <!-- Dropdown Trigger -->
+      <li><a class="dropdown-button" href="#!" data-target="dropdown1"><%= current_user.email %><i class="material-icons right"></i></a></li>
+              <%end%>
+  </ul>
+        </ul>
+    </div>
+  </div>
+</nav>
+
+<ul class="sidenav" id="mobile-demo">
+      <li><a href="#">Courses</a></li>
+      <% if(!user_signed_in?)%>
+      <li><%= link_to "Sign_Up", new_user_registration_path %></li>
+      <li><%= link_to "Login", new_user_session_path %></li>
+      <%else%>
+<!-- Dropdown Trigger -->
+<li><a class="dropdown-button" href="#!" data-target="dropdown2"><%= current_user.email %><i class="material-icons right"></i></a></li>
+      <%end%>
+</ul>
+ </header>  
+<%
+=end%>
