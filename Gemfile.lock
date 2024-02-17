@@ -85,6 +85,13 @@ GEM
       regexp_parser (>= 1.5, < 3.0)
       xpath (~> 3.2)
     childprocess (4.1.0)
+    coffee-rails (5.0.0)
+      coffee-script (>= 2.2.0)
+      railties (>= 5.2.0)
+    coffee-script (2.4.1)
+      coffee-script-source
+      execjs
+    coffee-script-source (1.12.2)
     concurrent-ruby (1.1.10)
     crass (1.0.6)
     debug (1.5.0)
@@ -125,6 +132,8 @@ GEM
     mail (2.7.1)
       mini_mime (>= 0.1.1)
     marcel (1.0.2)
+    material_icons (2.2.1)
+      railties (>= 3.2)
     materialize-sass (1.0.0.1)
       autoprefixer-rails (>= 6.0.3)
     matrix (0.4.2)
@@ -223,6 +232,8 @@ GEM
     turbo-rails (1.0.1)
       actionpack (>= 6.0.0)
       railties (>= 6.0.0)
+    turbolinks (2.5.4)
+      coffee-rails
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
     warden (1.2.9)
@@ -255,6 +266,7 @@ DEPENDENCIES
   jbuilder
   jquery-rails (~> 4.3, >= 4.3.3)
   jquery-ui-rails
+  material_icons
   materialize-sass
   puma (~> 5.0)
   rails (~> 7.0.2, >= 7.0.2.4)
@@ -265,6 +277,7 @@ DEPENDENCIES
   sqlite3 (~> 1.4)
   stimulus-rails
   turbo-rails
+  turbolinks (~> 2.5, >= 2.5.3)
   tzinfo-data
   web-console
   webdrivers

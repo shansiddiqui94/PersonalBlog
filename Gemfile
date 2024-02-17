@@ -9,6 +9,7 @@ gem "rails", "~> 7.0.2", ">= 7.0.2.4"
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
+gem 'turbolinks', '~> 2.5', '>= 2.5.3'
 # Use sqlite3 as the database for Active Record
 gem "sqlite3", "~> 1.4"
 
@@ -44,10 +45,12 @@ gem "bootsnap", require: false
 
 # Use Sass to process CSS
  gem "sassc-rails"
-
+ gem 'material_icons' 
  gem 'materialize-sass'
+
  gem 'devise', '~> 4.8', '>= 4.8.1'
-# Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
+
+ # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
 # Gem Jquery and rails ujs

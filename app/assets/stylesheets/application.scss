@@ -17,7 +17,8 @@
  */
  @import "materialize";
  @import 'jquery-ui/datepicker';
-
+ @import "https://fonts.googleapis.com/icon?family=Material+Icons";
+ 
  body {
     display: flex;
     min-height: 100vh;
@@ -27,3 +28,11 @@
   main {
     flex: 1 0 auto;
   }
+  
+//   nav i.material-icons {
+//      display: block; 
+//      font-size: 24px; 
+//      height: 56px; 
+//      line-height: 56px;
+// }
+  
